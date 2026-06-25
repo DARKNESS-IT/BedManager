@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МебельТорг — Учёт кроватей</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; color: #333; line-height: 1.6; }
+
+        /* Шапка */
+        .hero { background: linear-gradient(135deg, #1a5276, #2e86c1); color: white; text-align: center; padding: 60px 20px 50px; }
+        .hero .logo { background: #f3e5ab; color: #503c14; display: inline-block; padding: 12px 30px; border-radius: 20px; font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+        .hero h1 { font-size: 22px; font-weight: 400; margin-bottom: 30px; opacity: 0.9; }
+        .btn { display: inline-block; padding: 14px 30px; border-radius: 8px; font-size: 16px; font-weight: bold; text-decoration: none; margin: 8px; transition: transform 0.2s; }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-win { background: #4caf50; color: white; }
+        .btn-android { background: #7c4dff; color: white; }
+
+        /* Секции */
+        section { padding: 50px 20px; max-width: 1000px; margin: 0 auto; }
+        h2 { text-align: center; font-size: 28px; margin-bottom: 30px; color: #1a5276; }
+
+        /* О приложении */
+        .about p { text-align: center; font-size: 17px; max-width: 700px; margin: 0 auto; color: #555; }
+
+        /* Возможности */
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .feat { background: #f8f9fa; border-radius: 12px; padding: 25px; text-align: center; }
+        .feat .icon { font-size: 40px; margin-bottom: 12px; }
+        .feat h3 { font-size: 18px; margin-bottom: 8px; }
+        .feat p { font-size: 14px; color: #666; }
+
+        /* Скриншоты */
+        .screenshots { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .screenshots img { max-width: 280px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+
+        /* Установка */
+        .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .step { text-align: center; padding: 20px; }
+        .step .num { background: #1a5276; color: white; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; margin-bottom: 12px; }
+        .step h4 { margin-bottom: 6px; }
+        .step p { font-size: 14px; color: #666; }
+
+        /* Скачать */
+        .download { background: #f8f9fa; text-align: center; border-radius: 16px; padding: 40px; }
+        .download .btns { margin: 20px 0; }
+        .qr { margin-top: 20px; font-size: 14px; color: #888; }
+
+        /* Подвал */
+        footer { text-align: center; padding: 25px; background: #1a5276; color: white; font-size: 14px; }
+        footer a { color: #f3e5ab; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <div class="hero">
+        <div class="logo">МебельТорг</div>
+        <h1>Учёт кроватей — просто и удобно</h1>
+        <div>
+            <a href="https://github.com/DARKNESS-IT/BedManager/releases/download/v1.0/МебельТорг.zip" class="btn btn-win">💻 Скачать для Windows</a>
+            <a href="https://github.com/DARKNESS-IT/BedManager/releases/download/v1.0/app-debug.apk" class="btn btn-android">📱 Скачать для Android</a>
+        </div>
+    </div>
+
+    <!-- О приложении -->
+    <section class="about">
+        <h2>О приложении</h2>
+        <p>«МебельТорг» — это бесплатное приложение для учёта кроватей. Управляйте каталогом, ведите складской учёт, фильтруйте и сортируйте товары, импортируйте и экспортируйте данные в Excel. Работает на Windows и Android с единым файлом данных.</p>
+    </section>
+
+    <!-- Возможности -->
+    <section>
+        <h2>Возможности</h2>
+        <div class="features">
+            <div class="feat"><div class="icon">📋</div><h3>Полный каталог</h3><p>14 полей: модель, производитель, цвет, размеры, материал, конструкция и другие.</p></div>
+            <div class="feat"><div class="icon">🔍</div><h3>Фильтры и поиск</h3><p>Фильтрация по 10 параметрам, поиск по модели, сортировка по любой колонке.</p></div>
+            <div class="feat"><div class="icon">📁</div><h3>Импорт / Экспорт</h3><p>Загрузка и выгрузка CSV-файлов, совместимых с Microsoft Excel.</p></div>
+            <div class="feat"><div class="icon">🔄</div><h3>Единые данные</h3><p>Один CSV-файл для десктопа и телефона. Полная совместимость.</p></div>
+            <div class="feat"><div class="icon">👻</div><h3>Мягкое удаление</h3><p>Скрывайте товары вместо полного удаления. Восстановление в один клик.</p></div>
+            <div class="feat"><div class="icon">💾</div><h3>Автосохранение</h3><p>Напоминание о сохранении изменений при выходе из приложения.</p></div>
+        </div>
+    </section>
+
+    <!-- Скриншоты -->
+    <section>
+        <h2>Интерфейс</h2>
+        <div class="screenshots">
+            <img src="screenshot-desktop.png" alt="Десктопная версия" onerror="this.style.display='none'">
+            <img src="screenshot-mobile.png" alt="Мобильная версия" onerror="this.style.display='none'">
+        </div>
+        <p style="text-align:center;margin-top:15px;color:#888;font-size:14px;">* Добавьте свои скриншоты в папку с index.html</p>
+    </section>
+
+    <!-- Как установить -->
+    <section>
+        <h2>Как установить</h2>
+        <div class="steps">
+            <div class="step"><div class="num">1</div><h4>Скачайте</h4><p>Нажмите кнопку выше и сохраните файл на компьютер.</p></div>
+            <div class="step"><div class="num">2</div><h4>Распакуйте</h4><p>Папка «МебельТорг» содержит EXE-файл и всё необходимое.</p></div>
+            <div class="step"><div class="num">3</div><h4>Запустите</h4><p>Откройте МебельТорг.exe. Java не требуется!</p></div>
+        </div>
+    </section>
+
+    <!-- Скачать -->
+    <section class="download">
+        <h2>Скачать бесплатно</h2>
+        <div class="btns">
+            <a href="https://github.com/DARKNESS-IT/BedManager/releases/download/v1.0/МебельТорг.zip" class="btn btn-win">💻 Windows (.exe)</a>
+            <a href="https://github.com/DARKNESS-IT/BedManager/releases/download/v1.0/app-debug.apk" class="btn btn-android">📱 Android (.apk)</a>
+        </div>
+        <div class="qr">
+            <p>Отсканируйте QR-код, чтобы скачать на телефон:</p>
+            <img src="qr-code.png" alt="QR-код" style="width:140px;margin-top:10px;" onerror="this.style.display='none'">
+            <p style="font-size:12px;">* QR-код можно сгенерировать на <a href="https://qr-code.io" target="_blank">qr-code.io</a></p>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <p>© 2026 МебельТорг | Разработчик: Черепанов Дмитрий | <a href="https://github.com/DARKNESS-IT/BedManager">GitHub проекта</a></p>
+	<p>Контакты разработчика | <a href="https://t.me/reverse_moon">Telegram</a> | <a href="https://vk.com/reverse_moon">VKontakte</a></p>
+    </footer>
+
+</body>
+</html>
